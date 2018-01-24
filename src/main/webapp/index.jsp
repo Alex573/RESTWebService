@@ -21,7 +21,7 @@
   <p class="size">Accept array of Integers and return this array sorted.</p>
   <p class="size">Both input and output will be in a JSON format.</p>
   <p class="size">The request can have a descending flag.</p>
-  <p class="size">Request type:POST Content-Type: application/json    host: <a href="http://localhost:8080/rest/sorted/array">http://localhost:8080/rest/sorted/array</a> </p>
+  <p class="size">Request type:POST Content-Type: application/json    host: <a href="https://rest-webservice.herokuapp.com/rest/sorted/array">https://rest-webservice.herokuapp.com/rest/sorted/array</a> </p>
 
   <p class="colorb">Example Input format:{ "descending":false, "array":[ 9, 7, 3, 15 ] }</p>
   <p class="colorr">Output format: [ 3, 7, 9, 15 ]</p>
