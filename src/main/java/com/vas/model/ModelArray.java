@@ -1,10 +1,12 @@
 package com.vas.model;
 
-//Model for REST service
+/**
+ * Model object for request array sort.
+ */
 public class ModelArray {
-    //flag type sorted
+    /** flag type sorted */
     private boolean descending;
-    //array model
+    /** array model */
     private int[] array;
 
     public boolean isDescending() {
@@ -15,7 +17,7 @@ public class ModelArray {
         this.descending = descending;
     }
 
-    public int[]  getArray() {
+    public int[] getArray() {
         return array;
     }
 
