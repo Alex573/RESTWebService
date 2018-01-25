@@ -1,6 +1,7 @@
 package com.vas.sorted;
 
-public class SortedArray {
+//Factory Sorted
+public class SortArrFactory {
     public ITypeSort sortType(String type){
         switch (type) {
             case "Quick":

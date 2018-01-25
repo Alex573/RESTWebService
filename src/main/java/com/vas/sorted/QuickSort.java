@@ -1,9 +1,8 @@
 package com.vas.sorted;
 
-import java.util.Arrays;
 
 public class QuickSort implements ITypeSort{
-
+    //Sort with flag
     public int[] sortStart(boolean descending, int[] list){
         int n = list.length;
         if (descending){
@@ -13,11 +12,11 @@ public class QuickSort implements ITypeSort{
         }
         return list;
     }
+    //Sort without flag
     public int[] sortStart(int[] list ){
         int n = list.length;
         quickSort(list, 0, n-1);
         return list;
-
     }
 
     // Quick sort algorithm
@@ -63,14 +62,4 @@ public class QuickSort implements ITypeSort{
         return i;
     }
 
-
-    //test
-    public static void main(String[] args) {
-        int[] list = new int[]{5,7,2,15,11};
-        new QuickSort().sortStart(false,list);
-        System.out.println(Arrays.toString(list));
-        new QuickSort().sortStart(true,list);
-        System.out.println(Arrays.toString(list));
-
-    }
 }

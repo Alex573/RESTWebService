@@ -11,6 +11,7 @@
 
   <properties>
     <jersey.version>1.19.4</jersey.version>
+      <heroku.version>2.7.1</heroku.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
@@ -35,16 +36,13 @@
       <dependency>
           <groupId>com.sparkjava</groupId>
           <artifactId>spark-core</artifactId>
-          <version>2.7.1</version>
+          <version>${heroku.version}</version>
       </dependency>
       <dependency>
           <groupId>com.sparkjava</groupId>
           <artifactId>spark-template-freemarker</artifactId>
-          <version>2.7.1</version>
+          <version>${heroku.version}</version>
       </dependency>
-
-
-
 
   </dependencies>
 

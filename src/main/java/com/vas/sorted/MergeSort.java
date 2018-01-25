@@ -1,9 +1,8 @@
 package com.vas.sorted;
 
-import java.util.Arrays;
 
 public class MergeSort implements ITypeSort{
-
+    //Sort with flag
     public int[] sortStart(boolean descending, int[] list){
         if (descending){
             shellSortDes(list);
@@ -12,12 +11,11 @@ public class MergeSort implements ITypeSort{
         }
         return list;
     }
+    //Sort without flag
     public int[] sortStart(int[] list ){
         shellSort(list);
         return list;
-
     }
-
     // Shell sort algorithm
     private void shellSort(int[] array) {
         int h = 1;
@@ -63,14 +61,4 @@ public class MergeSort implements ITypeSort{
         }
     }
 
-
-    //test
-    public static void main(String[] args) {
-        int[] list = new int[]{5,7,2,15,11};
-        new MergeSort().sortStart(false,list);
-        System.out.println(Arrays.toString(list));
-        new MergeSort().sortStart(true,list);
-        System.out.println(Arrays.toString(list));
-
-    }
 }

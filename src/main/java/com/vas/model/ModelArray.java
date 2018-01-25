@@ -1,9 +1,10 @@
-package com.vas.Model;
+package com.vas.model;
 
-
+//Model for REST service
 public class ModelArray {
-
+    //flag type sorted
     private boolean descending;
+    //array model
     private int[] array;
 
     public boolean isDescending() {

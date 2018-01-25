@@ -1,25 +1,22 @@
 package com.vas.rest;
 
 
-
-import com.vas.Model.ModelArray;
-import com.vas.sorted.SortedArray;
+import com.vas.model.ModelArray;
+import com.vas.sorted.SortArrFactory;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import java.util.Arrays;
 
-
+//Rest host: /rest/sorted
 @Path("/sorted")
-public class RESTservice {
+public class RestService {
 
     @POST
     @Path("/array")
     @Consumes(MediaType.APPLICATION_JSON)
     public Response sortedArray(ModelArray modelArray){
-        new SortedArray().sortType("Merge").sortStart(modelArray.isDescending(), modelArray.getArray());
-        System.out.println(Arrays.toString(modelArray.getArray()));
+        new SortArrFactory().sortType("Merge").sortStart(modelArray.isDescending(), modelArray.getArray());
         return Response.status(201).entity(modelArray.getArray()).build();
     }
 }
